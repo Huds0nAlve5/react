@@ -1,0 +1,11 @@
+#formUser{
+    border: 1px solid black;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.inputs{
+    display: block;
+    margin: 10px auto;
+}

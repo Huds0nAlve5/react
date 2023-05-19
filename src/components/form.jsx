@@ -1,10 +1,12 @@
+import styles from "./form.module.css" //padrao criar o css com o nome do componente.module.css, e importar os styles dele aqui
+
 export function Formulario(){
     return (
         <>
-            <form id="form-user">
-                <input type="text" id="name" />
-                <input type="password" id="password" />
-                <button type="submit">Cadastrar</button>
+            <form id={styles.formUser}>
+                <input type="text" className={styles.inputs} />
+                <input type="password" className={styles.inputs} />
+                <button type="submit" className={styles.inputs}>Cadastrar</button>
             </form>
         </>
     )
