@@ -1,0 +1,4 @@
+var sucesso = (e)  => {
+        e.preventDefault() // IMPORTANTE! Muito utilziado para que nao atualize a pagina após um submit!!
+        window.alert("Cadastrado!")
+    }

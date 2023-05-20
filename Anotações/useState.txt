@@ -1,0 +1,7 @@
+import { useState } from "react"
+
+const [nome, getNome] = useState( ~aqui pode ser colocado um padrao~ )
+
+<input type="password" className={styles.inputs} onChange={(e) => setNome(e.target.value)} />
+
+<h1>O nome atual é {nome}</h1>

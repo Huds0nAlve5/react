@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import { Formulario } from './components/form.jsx'
 import { Contar } from './components/contagem.jsx'
 import { Classificacao } from './components/tabelaBR.jsx'
+import { FormularioCli } from './components/FormularioCli.jsx'
 
 const pessoa = {
   'nome': 'Hudson',
@@ -13,8 +13,8 @@ const pessoa = {
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App nome={pessoa.nome} idade={pessoa.idade}/>
-    <Formulario />
     <Contar />
     <Classificacao />
+    <FormularioCli />
  </React.StrictMode>,
 )

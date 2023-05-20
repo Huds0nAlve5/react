@@ -1,0 +1,21 @@
+Usando quando temos um componente, por exemplo, um buttom, que precisa limpar os campos que não tem dentro do seu JSX. Neste exemplo, os inputs estão no elemento pai
+
+Com isto, precisamos passar um evento por parametro por meio do props
+
+    const limparCampos = () => {
+        const inputs = document.getElementsByTagName("input")
+        for(let i = 0; i < inputs.length; i++){
+            inputs[i].value = ""
+        }
+        setNome("")
+        setSenha("")
+    }
+
+    <BotaoLimpar event={limparCampos}/> // passando o evento, que é a função, para o JSX do componente BotaoLimpar
+
+DENTRO DO COMPONENTE TEMOS O ON CLICK COM O EVENTO, VINDO DO PROPS
+
+export function BotaoLimpar(props){
+
+<button type="button" onClick={props.event}>Limpar</button>
+

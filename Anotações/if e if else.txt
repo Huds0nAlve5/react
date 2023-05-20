@@ -1,0 +1,4 @@
+{userNome ? (<h2>Bem vindo!{userNome} </h2>) : ("Sim")} // if else no jsx
+{userNome && (<h2>Bem vindo!{userNome} </h2>)}  //apenas if
+
+CONTEXTO: Criar 2 useState, 1 para receber os valores onChange, e outro para receber o valor onClick, para mudança na estrutura do DOM, podendo mostrar ou nao uma determinada tag
