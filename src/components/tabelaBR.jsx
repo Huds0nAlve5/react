@@ -12,10 +12,10 @@ export function Classificacao({time, colocacao}){
 
 Classificacao.propTypes = {
     time: propTypes.string.isRequired,
-    colocacao: propTypes.string.isRequired
+    colocacao: propTypes.number.isRequired
 }
 
 Classificacao.defaultProps = {
     time: 'time',
-    colocacao: '0'
+    colocacao: 0
 }

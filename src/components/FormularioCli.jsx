@@ -1,4 +1,4 @@
-import { BotaoLimpar } from "./botaoLimpar"
+import { BotaoLimpar } from "./BotaoLimpar"
 import styles from "./form.module.css" //padrao criar o css com o nome do componente.module.css, e importar os styles dele aqui
 import { useState } from "react"
 
