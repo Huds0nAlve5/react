@@ -4,6 +4,7 @@ import App from './App.jsx'
 import { Contar } from './components/contagem.jsx'
 import { Classificacao } from './components/tabelaBR.jsx'
 import { FormularioCli } from './components/FormularioCli.jsx'
+import { ListaComFiltro } from './components/listaComFiltro.jsx'
 
 const pessoa = {
   'nome': 'Hudson',
@@ -16,5 +17,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Contar />
     <Classificacao />
     <FormularioCli />
+    <ListaComFiltro />
  </React.StrictMode>,
 )
