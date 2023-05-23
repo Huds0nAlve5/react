@@ -1,11 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import { Contar } from './components/contagem.jsx'
-import { Classificacao } from './components/tabelaBR.jsx'
-import { FormularioCli } from './components/FormularioCli.jsx'
-import { ListaComFiltro } from './components/ListaComFiltro.jsx'
 import { ListaComIf } from './components/ListaComIf.jsx'
+import { NavBar } from './NavBar.jsx'
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import { Contar } from './components/contagem.jsx'
+import { FormularioCli } from './components/FormularioCli.jsx'
 
 const pessoa = {
   'nome': 'Hudson',
@@ -25,6 +24,14 @@ const carros = [{'Modelo': 'Fiat',
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ListaComIf carros = {carros}/>
+  	<Router>
+    	<NavBar />
+
+		<Routes>
+			<Route path='/' element={<Contar />}></Route>
+			<Route path='/cadastro' element={<ListaComIf carros={carros} />}></Route>
+			<Route path='/relatorio' element={<FormularioCli />}></Route>
+		</Routes>
+	</Router>
  </React.StrictMode>,
 )

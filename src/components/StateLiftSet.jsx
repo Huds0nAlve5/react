@@ -1,5 +1,5 @@
 export function StateLiftSet({setNome, nome, setNomeConf}){
-    var sucesso = (e) => {
+    const sucesso = (e) => {
         e.preventDefault()
         setNomeConf(nome)
     }
