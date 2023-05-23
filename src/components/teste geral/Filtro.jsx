@@ -8,10 +8,9 @@ export function Filtro(){
         fetch("https://api.github.com/users/Huds0nAlve5/repos")
         .then((res) =>  res.json())
         .then(data => setNome(data))
-        console.log(1)
     }, [])
 
-    const filtroAplicado = nomeFiltro.length > 0 ? nomes.filter(nome => nome["name"].includes(nomeFiltro)) : []
+    const filtroAplicado = nomeFiltro.length > 0 ? nomes.filter(nome => nome["name"].toUpperCase().includes(nomeFiltro.toUpperCase())) : []
 
     return(
         <>
