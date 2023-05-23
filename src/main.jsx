@@ -5,6 +5,9 @@ import { NavBar } from './NavBar.jsx'
 import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import { Contar } from './components/contagem.jsx'
 import { FormularioCli } from './components/FormularioCli.jsx'
+import { UseEffect } from './components/teste geral/UseEffect.jsx'
+import { UseStateList } from './components/teste geral/UseStateList.jsx'
+import { Filtro } from './components/teste geral/Filtro.jsx'
 
 const pessoa = {
   'nome': 'Hudson',
@@ -28,9 +31,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     	<NavBar />
 
 		<Routes>
-			<Route path='/' element={<Contar />}></Route>
+			<Route path='/' element={<UseEffect />}></Route>
 			<Route path='/cadastro' element={<ListaComIf carros={carros} />}></Route>
 			<Route path='/relatorio' element={<FormularioCli />}></Route>
+      <Route path='/usestatelist' element={<UseStateList/>}></Route>
+      <Route path='/filtro' element={<Filtro/>}></Route>
 		</Routes>
 	</Router>
  </React.StrictMode>,

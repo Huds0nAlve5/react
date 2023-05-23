@@ -20,6 +20,17 @@ export function NavBar() {    //Aula de componentes, aqui é um props desestrutu
 						Relatório
 					</Link>
 				</li>
+				<li>
+					<Link to="/usestatelist">
+						Usestatelist
+					</Link>
+				</li>
+				<li>
+					<Link to="/filtro">
+						Filtro
+					</Link>
+				</li>
+
 			</ul>
     </>
   )
